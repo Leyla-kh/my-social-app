@@ -1,0 +1,113 @@
+.share {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.13);
+  background-color: var(--background);
+}
+.shareContainer {
+  padding: 10px;
+}
+.shareTop {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.shareProfileImg {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.shareInput {
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 7px;
+  background-color: var(--background-dark);
+}
+.shareInput:focus {
+  outline: none;
+}
+.shareInput::placeholder {
+  color: var(--text-color-light);
+}
+.shareHr {
+  margin: 25px;
+  opacity: 0.5;
+}
+.shareImageContainer {
+  padding: 0 20px 10px 20px;
+  position: relative;
+}
+.shareImage {
+  width: 100%;
+  object-fit: cover;
+}
+.cancelButton {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+.shareOptions {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareOptionText {
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.shareBtn {
+  color: white;
+  background-color: var(--btn-3);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .shareProfileImg {
+    width: 35px;
+    height: 35px;
+  }
+  .shareInput::placeholder {
+    font-size: 0.45rem;
+  }
+  .shareOptionText {
+    display: none;
+  }
+  .shareHr {
+    margin: 10px;
+  }
+  .shareBottom {
+    padding: 0px 5px;
+  }
+  .shareIcon {
+    font-size: 17px !important;
+  }
+  .shareBtn {
+    font-size: 13px;
+    padding: 7px;
+  }
+}

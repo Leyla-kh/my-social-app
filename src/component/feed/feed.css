@@ -1,0 +1,16 @@
+.feed {
+  flex: 5;
+  padding: 15px;
+  background-color: var(--background-main);
+}
+@media only screen and (max-width: 768px) {
+  .feed {
+    flex: 3.5;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .feed {
+    padding: 5px;
+    flex: 2;
+  }
+}

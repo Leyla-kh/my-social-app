@@ -1,0 +1,242 @@
+.rightbar {
+  flex: 4;
+  background-color: var(--background-main);
+  padding-top: 18px;
+}
+
+.rightbarcontainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-dark);
+  border-radius: 5px;
+}
+.rightbarbirthday {
+  display: flex;
+  align-items: center;
+}
+.rightbarBirthdayIcon {
+  width: 40px;
+  margin-right: 5px;
+}
+.rightbarBirthdayText {
+  color: var(--text-color-light);
+  font-size: 14px;
+}
+.rightbarAd {
+  padding: 10px;
+  margin: 30px 0px 20px 0;
+  background-color: var(--background);
+  border-radius: 10px;
+}
+.rightbarAdTitle {
+  color: var(--text-color-light);
+  font-size: 14px;
+  font-weight: 500;
+}
+.rightbarAdImage {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.rightbarAdText {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.onlinefriendSection {
+  padding: 10px;
+  background-color: var(--background);
+  border-radius: 10px;
+}
+.onlineFriendsTitile {
+  color: var(--text-color);
+  font-size: 14px;
+}
+.rightbarOnlineFriends {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.onlineFriendLink {
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ProfileRightbar */
+
+.rightbarTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.rightbarInfo {
+  margin-bottom: 20px;
+}
+.rightbarInfoItem {
+  margin-bottom: 15px;
+}
+.rightbarInfoKey {
+  font-size: 17px;
+  color: var(--text-color);
+  margin-right: 10px;
+}
+.rightbarInfoValue {
+  color: var(--text-color-light);
+  font-weight: 500;
+}
+.rightbarFollowings {
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.rightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.followingImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.rightbarFollowingName {
+  font-size: 15px;
+}
+
+.topPart {
+  display: flex;
+  justify-content: space-between;
+}
+.RightPart {
+  margin-right: 20px;
+}
+.followButton {
+  padding: 10px 20px;
+  background-color: var(--btn-4);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.editForm {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  background-color: rgba(117, 81, 165, 0.349);
+}
+.editFormContainer {
+  width: 50%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+}
+.textInputs {
+  width: 80%;
+  align-items: center;
+}
+.textInputItem {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editFormInput {
+  margin: 0 0 10px 10px;
+  width: 60%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--btn-2);
+}
+.editFormInput:focus {
+  outline: none;
+}
+.fileInputs {
+  margin-top: 25px;
+}
+.buttonLabel {
+  padding: 10px;
+  background-color: var(--btn-4);
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.imagePreview {
+  width: 140px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.profileImagePreview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 50%;
+}
+.preview {
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.previewContainer {
+  position: relative;
+}
+.cancelButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.editButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.editSubmitBtn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .rightbar {
+    flex: 2;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .rightbar {
+    flex: 0.5;
+  }
+  .rightbarbirthday,
+  .rightbarAd,
+  .onlinefriendName {
+    display: none;
+  }
+}

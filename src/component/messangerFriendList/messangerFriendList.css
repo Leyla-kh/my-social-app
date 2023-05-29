@@ -1,0 +1,45 @@
+.friend {
+  background-color: rgb(253, 255, 255);
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--background);
+}
+.friendInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.friendBadge {
+  position: absolute;
+  top: -5px;
+  left: 35px;
+  border: solid 2px white;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50px;
+}
+.friendImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.friendName {
+  font-size: 14px;
+}
+.friendSendMsg {
+  font-size: 12px;
+  padding: 5px 7px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--background-dark);
+  color: var(--text-color-light);
+}

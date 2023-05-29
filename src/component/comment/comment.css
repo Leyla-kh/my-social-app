@@ -1,0 +1,24 @@
+.commentItem {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.commentItemImage {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.commentText {
+  font-size: 13px;
+  width: 70%;
+  font-weight: 500;
+  margin: 0 7px;
+  color: var(--text-color);
+}
+.commentTime {
+  font-size: 10px;
+  margin-left: 3px;
+  color: var(--text-color-light);
+}
