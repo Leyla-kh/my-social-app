@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://mySocialApp.onrender.com/api",
+  baseURL: "https://mysocialapp-2q9l.onrender.com/api",
 });
