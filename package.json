@@ -1,7 +1,7 @@
 {
   "name": "social-app",
   "version": "0.1.0",
-  "private": true,
+  "homepage": ".",
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
     "@emoji-mart/react": "^1.1.1",
@@ -47,6 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:8800/api"
+  }
 }
