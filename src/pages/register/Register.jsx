@@ -71,7 +71,7 @@ export default function Register() {
             <button className="registerBtn" type="submit">
               {isFetching ? <CircularProgress size="25px" colo /> : "Register"}
             </button>
-            <Link to="/login">
+            <Link to="/login" className="loginLink">
               <button className="haveAccountBtn" type="submit">
                 I already have an account
               </button>

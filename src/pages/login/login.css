@@ -72,6 +72,9 @@
 .registerBtn:disabled {
   cursor: not-allowed;
 }
+.registerLink {
+  text-decoration: none;
+}
 .newAccountBtn {
   padding: 15px;
   font-weight: bold;
@@ -81,7 +84,8 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .forgotPass {
   text-align: center;

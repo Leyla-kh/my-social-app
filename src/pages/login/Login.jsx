@@ -48,7 +48,7 @@ export default function Login() {
               {isFetching ? <CircularProgress size="25px" colo /> : "Login"}
             </button>
             <span className="forgotPass">Forgot Password?</span>
-            <Link to="/register">
+            <Link to="/register" className="registerLink">
               <button className="newAccountBtn">Great a New Account</button>
             </Link>
           </form>
