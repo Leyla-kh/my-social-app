@@ -1,7 +1,8 @@
-import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./register.css";
 import { axiosInstance } from "../../config";
+import { CircularProgress } from "@mui/material";
 
 export default function Register() {
   const username = useRef();
@@ -9,8 +10,11 @@ export default function Register() {
   const password = useRef();
   const passwordAgain = useRef();
   const history = useNavigate();
+  const [isFetching, setIsFetching] = useState(false);
+
   const handleClick = async (e) => {
     e.preventDefault();
+    setIsFetching(true);
     if (password.current.value !== passwordAgain.current.value) {
       passwordAgain.current.setCustomValidity("Password don't match!");
     } else {
@@ -21,8 +25,10 @@ export default function Register() {
       };
       try {
         await axiosInstance.post("/auth/register", user);
+        setIsFetching(false);
         history("/login");
       } catch (error) {
+        setIsFetching(false);
         console.log(error);
       }
     }
@@ -63,9 +69,14 @@ export default function Register() {
               className="registerInput"
             />
             <button className="registerBtn" type="submit">
-              Register
+              {isFetching ? <CircularProgress size="25px" colo /> : "Register"}
             </button>
           </form>
+          <Link to="/login">
+            <button className="haveAccountBtn" type="submit">
+              I already have an account
+            </button>
+          </Link>
         </div>
       </div>
     </div>
