@@ -36,7 +36,7 @@
 
   padding: 10px;
 }
-.registerBox {
+.formBox {
   background-color: blueviolet;
   padding: 40px;
   height: 300px;
@@ -71,6 +71,17 @@
 }
 .registerBtn:disabled {
   cursor: not-allowed;
+}
+.newAccountBtn {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(41, 247, 202);
+  color: rgb(32, 1, 61);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
 }
 .forgotPass {
   text-align: center;

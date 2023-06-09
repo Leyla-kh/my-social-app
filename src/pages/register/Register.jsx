@@ -71,12 +71,12 @@ export default function Register() {
             <button className="registerBtn" type="submit">
               {isFetching ? <CircularProgress size="25px" colo /> : "Register"}
             </button>
+            <Link to="/login">
+              <button className="haveAccountBtn" type="submit">
+                I already have an account
+              </button>
+            </Link>
           </form>
-          <Link to="/login">
-            <button className="haveAccountBtn" type="submit">
-              I already have an account
-            </button>
-          </Link>
         </div>
       </div>
     </div>

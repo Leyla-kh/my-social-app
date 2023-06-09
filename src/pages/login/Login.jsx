@@ -28,7 +28,7 @@ export default function Login() {
           </span>
         </div>
         <div className="registerRight">
-          <form className="registerBox" onSubmit={handleClick}>
+          <form className="formBox" onSubmit={handleClick}>
             <input
               placeholder="Email"
               type="email"
@@ -49,7 +49,7 @@ export default function Login() {
             </button>
             <span className="forgotPass">Forgot Password?</span>
             <Link to="/register">
-              <button className="registerBtn">Great a New Account</button>
+              <button className="newAccountBtn">Great a New Account</button>
             </Link>
           </form>
         </div>
