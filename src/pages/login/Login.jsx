@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   const email = useRef();
   const password = useRef();
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const { user, isFetching, error, dispatch } = useContext(AuthContext);
   const handleClick = (e) => {
