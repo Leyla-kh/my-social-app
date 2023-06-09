@@ -69,7 +69,8 @@ export default function Topbar() {
     <div className={`topbarContainer ${theme}`}>
       <div className="topbarLeft">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="topbarLogo">aoao</span>
+          <img src={PF + "social-logo.png"} className="social-logo" />
+          <span className="topbarLogo">Friends</span>
         </Link>
         <div className="topbarLinks">
           {theme == "light" ? (

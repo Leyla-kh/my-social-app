@@ -19,6 +19,11 @@
   flex-direction: column;
   align-items: center;
 }
+.logo {
+  width: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
 .registerLogo {
   font-size: 48px;
   margin-bottom: 20px;
@@ -74,6 +79,8 @@
 }
 .registerLink {
   text-decoration: none;
+  display: block;
+  margin: 0 auto;
 }
 .newAccountBtn {
   padding: 15px;

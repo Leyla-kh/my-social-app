@@ -11,6 +11,7 @@ export default function Register() {
   const passwordAgain = useRef();
   const history = useNavigate();
   const [isFetching, setIsFetching] = useState(false);
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const handleClick = async (e) => {
     e.preventDefault();
@@ -37,7 +38,8 @@ export default function Register() {
     <div className="register">
       <div className="registerContainer">
         <div className="registerLeft">
-          <h3 className="registerLogo">aoao Social Media</h3>
+          <img src={PF + "social-logo.png"} className="logo" />
+          <h3 className="registerLogo">Friends Social Media</h3>
           <span className="registerDesc">
             enjoy of connect with friends easily
           </span>

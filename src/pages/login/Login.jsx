@@ -22,7 +22,8 @@ export default function Login() {
     <div className="register">
       <div className="registerContainer">
         <div className="registerLeft">
-          <h3 className="registerLogo">aoao Social Media</h3>
+          <img src={PF + "social-logo.png"} className="logo" />
+          <h3 className="registerLogo">Friends Social Media</h3>
           <span className="registerDesc">
             enjoy of connect with friends easily
           </span>
