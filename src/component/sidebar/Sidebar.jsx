@@ -25,7 +25,6 @@ export default function Sidebar() {
       try {
         const res = await axiosInstance.get("/user/users");
         setUsers(res.data.filter((u) => u._id !== currentUser._id));
-        console.log(users);
       } catch (err) {
         console.log(err);
       }

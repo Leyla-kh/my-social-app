@@ -50,7 +50,6 @@ export default function Share() {
       try {
         const res = await axiosInstance.post("/upload", data);
         newPost.image = res.data.filename;
-        console.log(res);
       } catch (error) {
         console.log("cant upload");
       }

@@ -109,11 +109,8 @@ export default function Rightbar({ user }) {
 
     profileData.userId = currentUser._id;
     try {
-      console.log(profileData);
       await axiosInstance.put(`/user/${currentUser._id}`, profileData);
-
       const res = await axiosInstance.get(`/user/?userId=${currentUser._id}`);
-      console.log(res.data);
       dispatch({ type: "USER_EDITED", payload: res.data });
 
       if (!profileData.username) {

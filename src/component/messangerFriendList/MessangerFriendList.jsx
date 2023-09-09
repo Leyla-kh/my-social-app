@@ -54,7 +54,6 @@ export default function MessangerFriendList({
       try {
         const res = await axiosInstance.get("/conversations/" + currentUserId);
         setConversations(res.data);
-        console.log("render");
       } catch (error) {
         console.log(error);
       }
@@ -81,7 +80,6 @@ export default function MessangerFriendList({
           console.log(error);
         }
       } else {
-        console.log("yes");
         setCurrentConversation(findConversation);
       }
     } catch (error) {

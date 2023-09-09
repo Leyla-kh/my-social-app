@@ -4,7 +4,6 @@ import Sidebar from "../../component/sidebar/Sidebar";
 import Feed from "../../component/feed/Feed";
 import Rightbar from "../../component/rightbar/Rightbar";
 import { useContext, useEffect, useState } from "react";
-import axios from "axios";
 import { useParams } from "react-router-dom";
 import { ThemeContext } from "../../Contex/ThemeContext";
 import { axiosInstance } from "../../config";
